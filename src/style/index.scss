@@ -1,3 +1,31 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-bottom: $border-color 1px solid;
+}
+
+.header-login, .header-register {
+  border-radius: $border-radius-base;
+  width: 100px;
+  border: $border-color 1px solid;
+}
+
+.right{
+  padding-top:8px;
+}
+
+.header-login {
+  background-color: transparent;
+  color: $primary-color;
+}
+
+.header-register {
+  background-color: $primary-color;
+  color: $white;
+}
